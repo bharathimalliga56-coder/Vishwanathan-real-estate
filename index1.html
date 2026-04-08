@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viswanathan's Real Estate | RERA & DTCP Approved Plots</title>
+<meta name="description" content="Viswanathan's Real Estate offers RERA Approved and DTCP Approved plots for sale with loan facility. Find residential and commercial plots in prime locations.">
+<meta name="keywords" content="plots for sale, DTCP approved plots, RERA approved plots, land for sale, real estate plots">
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #fff3c4, #e0f7fa);
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(#1b6f67);
+  color: #fff;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+header h1 {
+  font-size: 26px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* HERO SLIDER */
+.hero-slider {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+.hero-text1 {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+.hero-text h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: #f9a826;
+  border-radius: 5px;
+}
+
+/* ARROWS */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 35px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+/* SECTIONS */
+section {
+ 
+  max-width: 1250px;
+  margin: 20px auto;
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+/* PROPERTY CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card .content {
+  padding: 15px;
+}
+
+.price {
+  font-weight: bold;
+  color: #0f4c75;
+}
+
+/* ABOUT & CONTACT */
+.about, .contact {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #1b6f67;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1b6f67;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .hero-text h2 { font-size: 28px; }
+  header { flex-direction: column; }
+  nav { margin-top: 10px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-text">
+<h1><img src="C:\Users\ADMIN\Desktop\viswanathan\logo.png" height="100px" width="100px">
+    Viswanathan's Real Estate</h1>
+    
+    <span class="slogan">Building Trust, Creating Homes</span>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#properties">Properties</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO SLIDER -->
+<section class="hero-slider" id="home">
+
+  <div class="slide active">
+    <img src="C:\Users\ADMIN\Desktop\viswanathan\images\hero (2).png">
+    <div class="hero-text">
+      <h2>Your Dream Property, Our Commitment</h2>
+      <p>Trusted real estate services for buying, selling, and renting properties.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Contact Us
+      </button>
+    </div>
+  </div>
+ <div class="slide">
+    <img src="C:\Users\ADMIN\Desktop\viswanathan\images\invest4.png">
+<div class="hero-text">
+      <h2>Invest in Premium Plots for a Better Future</h2>
+      <p>RERA approved plots and DTCP approved plots</p>
+</div>
+  </div>
+ <div class="slide">
+  <!--  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">-->
+<img src="C:\Users\ADMIN\Desktop\viswanathan\images\hero.png">
+ <h2>Buying real estate is not only the best way, the quickest way, the safest way, but the only way to become wealthy.”</h2>
+     <div class="hero-text1">
+      <h2>Your Happiness Begins with Viswanathan's Real Estate</h2>
+      <p>Trusted real estate services for buying, selling, and renting properties.</p>
+</div>
+  </div>
+  <div class="slide">
+    <!--<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">-->
+<img src="C:\Users\ADMIN\Desktop\viswanathan\images\plot5.png">
+<div class="hero-text">
+      <h2>Why Choose Viswanathan's Real Estate</h2>
+
+<p>✔ RERA Approved Plots</p>
+<p>✔ DTCP Approved Layouts</p>
+<p>✔ Clear Legal Documentation</p>
+<p>✔ Bank Loan Facility Available</p>
+<p>✔ Prime Locations</p>
+<p>✔ Trusted Real Estate Service</p>
+      <p>Trusted real estate services for buying, selling, and renting properties.</p>
+      <!--<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Contact Us
+      </button>-->
+    </div>
+</div>
+
+  <div class="slide">
+    <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+  </div>
+
+  <span class="prev">&#10094;</span>
+  <span class="next">&#10095;</span>
+</div>
+</section>
+
+<!-- PROPERTIES -->
+<section id="properties">
+  <h2>Featured Properties</h2>
+  <div class="cards">
+    <div class="card">
+    <!--  <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c">-->
+<img src="C:\Users\ADMIN\Desktop\viswanathan\images\infinite1.png">
+      <div class="content">
+        <h3>Our Services</h3><br>
+        <p>
+
+<h3>Residential Plots</h3></p>
+<p><h5>
+Premium RERA Approved and DTCP Approved residential plots in prime locations.</h5></p><br>
+<p>
+<h3>Commercial Plots</h3></p>
+<p>
+<h5>Well-located commercial plots ideal for business and investment.</h5></p><br>
+        <div class="price">₹85,00,000</div>
+      </div>
+    </div>
+
+    <div class="card">
+    <!--<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">-->
+<img src="C:\Users\ADMIN\Desktop\viswanathan\images\investment.png">
+      <div class="content">
+        <h3>Approved Layouts</h3>
+<p><h5>All plots come with DTCP approval and clear legal documentation.</h5></p><br>
+
+<p><h3>Loan Facility Available</h3></p>
+<p><h5>
+Easy bank loan assistance available to help customers buy plots comfortably.</h5></p><br>
+<p>
+ <h3>Real Estate Investment</h3></p>
+<p><h5>High-potential land investment opportunities with future growth value.</h5></p><br>
+        
+        <div class="price">₹55,00,000</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about">
+    <p>
+      Welcome to <b>Viswanathan's Real Estate</b>, a trusted property company offering <b>RERA</b> Approved and <b>DTCP</b> Approved plots in well-developed locations. We specialize in providing residential plots, commercial plots, and land for sale with clear documentation and secure investment opportunities.
+
+Our goal is to make property buying easy, safe, and transparent for every customer. Whether you are planning or looking for the best land investment opportunities, we provide professional guidance and trusted service.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact">
+   <!-- <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>-->
+<form id="contactForm" action="https://formsubmit.co/bharathimalliga56@gmail.com" method="POST">
+
+  <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+  <input type="tel" name="phone" id="phone" placeholder="Your Phone" required>
+
+  <textarea name="message" id="message" rows="4" placeholder="Your Message"></textarea>
+
+  <!-- Hidden fields -->
+  <input type="hidden" name="_subject" value="New Enquiry - Viswanathan Real Estate">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit">Send Message</button>
+
+</form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Viswanathan Real Estate. All Rights Reserved.
+</footer>
+
+<a href="https://wa.me/918838349726" target="_blank" class="whatsapp-btn"><img src="C:\Users\ADMIN\Desktop\viswanathan\images\whats apps.png" height=50px; width=50px;></a>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let current = 0;
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+}
+
+function nextSlide() {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}
+
+function prevSlide() {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+}
+
+document.querySelector(".next").onclick = nextSlide;
+document.querySelector(".prev").onclick = prevSlide;
+
+setInterval(nextSlide, 4000);
+</script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  
+  // Get values
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
+
+  // WhatsApp message
+  let whatsappMessage = `Hello, I am ${name}.
+Phone: ${phone}
+Message: ${message}`;
+
+  let encodedMessage = encodeURIComponent(whatsappMessage);
+
+  // Your WhatsApp number
+  let whatsappNumber = "918838349726";
+
+  // Open WhatsApp
+  window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+
+  // Show success message
+  alert("Thank you! Your enquiry has been sent.");
+
+});
+</script>
+</body>
+</html>
